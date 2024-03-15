@@ -1,10 +1,8 @@
 import openpyxl
 # from openpyxl import open
-5f3079b
+
 def readingValue():
     wb = openpyxl.open('example.xlsx')
-    wb1 = openpyxl.open('example.xlsx')
-    print(type(wb1))
     print(wb.get_sheet_names())
     sheet = wb.get_sheet_by_name('Sheet1')
     print(tuple(sheet['A1':'C3']))
